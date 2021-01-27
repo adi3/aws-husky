@@ -29,5 +29,5 @@
     </include>
     
      <!--- Choose planner algorithm (True: Dijkstra, False: A*) --> 
-    <param name="move_base/GlobalPlanner/use_dijkstra" value="false" />
+    <param name="move_base/GlobalPlanner/use_dijkstra" value="true" />
 </launch>
