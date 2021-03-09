@@ -1,12 +1,15 @@
 <?xml version="1.0"?>
 
 <launch>
+
+    <arg name="use_dijkstra" default="true"/>
+
     <!--- Run Gazebo simulation -->
     <include file="$(find husky_gazebo)/launch/husky_playpen.launch"/>
     
     <!--- Open rviz -->
-    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find aws_husky)/rviz/path_planning.rviz" output="screen"/>
-    
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find husky_planning)/rviz/path_planning.rviz" output="screen"/>
+
     
     <!-- Run the map server -->
     <arg name="map_file" default="$(find husky_navigation)/maps/playpen_map.yaml"/>
@@ -29,5 +32,6 @@
     </include>
     
      <!--- Choose planner algorithm (True: Dijkstra, False: A*) --> 
-    <param name="move_base/GlobalPlanner/use_dijkstra" value="true" />
+    <param name="move_base/GlobalPlanner/use_dijkstra" value="$(arg use_dijkstra)" />
+    
 </launch>
