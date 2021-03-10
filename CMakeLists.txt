@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(husky_planning)
+project(husky_planner)
 
 find_package(catkin REQUIRED COMPONENTS
   global_planner
