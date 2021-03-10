@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 
 <launch>
-
     <arg name="use_dijkstra" default="true"/>
 
     <!--- Run Gazebo simulation -->
