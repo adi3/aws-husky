@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>husky_planning</name>
+  <name>husky_planner</name>
   <version>0.1.0</version>
-  <description>The husky_planning package</description>
+  <description>The husky_planner package</description>
 
   <license>Amazon Software License</license>
   <maintainer email="adsnghw@amazon.com">Adi Singh</maintainer>
