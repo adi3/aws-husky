@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <launch>
-    <include file="$(find husky_planning)/launch/planning_dijkstra.launch">
+    <include file="$(find husky_planner)/launch/planning_dijkstra.launch">
         <arg name="use_dijkstra" value="false"/>
     </include>
 </launch>
